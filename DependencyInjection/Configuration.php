@@ -17,8 +17,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('guzzle_config_operations');
+        $treeBuilder = new TreeBuilder('guzzle_config_operations');
+        $treeBuilder->getRootNode();
 
         return $treeBuilder;
     }
